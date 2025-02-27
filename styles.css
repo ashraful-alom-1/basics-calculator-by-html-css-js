@@ -1,0 +1,73 @@
+/* Body Styles */
+body {
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+  background-color: #f4f4f4; /* Light gray background */
+  font-family: Arial, sans-serif; /* Default font */
+}
+
+/* Calculator Container */
+.calculator {
+  background-color: #333; /* Dark gray background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  width: 300px; /* Fixed width */
+  padding: 20px; /* Inner spacing */
+}
+
+/* Display Screen */
+#display {
+  width: 100%; /* Full width */
+  height: 50px; /* Fixed height */
+  background-color: #222; /* Dark background */
+  color: #fff; /* White text */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  text-align: right; /* Align text to the right */
+  padding: 10px; /* Inner spacing */
+  font-size: 24px; /* Large font size */
+  margin-bottom: 10px; /* Spacing below the display */
+}
+
+/* Buttons Container */
+.buttons {
+  display: grid; /* Grid layout */
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 10px; /* Spacing between buttons */
+}
+
+/* Button Styles */
+button {
+  background-color: #444; /* Dark gray background */
+  color: #fff; /* White text */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 20px; /* Inner spacing */
+  font-size: 18px; /* Medium font size */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+/* Button Hover Effect */
+button:hover {
+  background-color: #555; /* Lighter gray on hover */
+}
+
+/* Equal Button */
+.equal {
+  grid-column: span 2; /* Span 2 columns */
+  background-color: #f39c12; /* Orange background */
+}
+
+/* Equal Button Hover Effect */
+.equal:hover {
+  background-color: #e67e22; /* Darker orange on hover */
+}
+
+/* Button Active State */
+button:active {
+  background-color: #666; /* Even lighter gray when clicked */
+}
